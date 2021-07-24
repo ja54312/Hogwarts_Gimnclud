@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import './style.css';
 
 class HelloMessage extends React.Component {
   render() {
-    return <div>Hello {this.props.name}</div>;
+    return <div>Holi {this.props.name}</div>;
   }
 }
 
-var mountNode = document.getElementById("app");
-ReactDOM.render(<HelloMessage name="Jane" />, mountNode);
+var mountNode = document.getElementById("root");
+ReactDOM.render(mountNode);
