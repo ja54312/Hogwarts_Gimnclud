@@ -1,0 +1,12 @@
+.version{
+    color:black;
+    position: absolute;
+    left: 90%;
+    bottom: 0%;
+}
+@media screen and (max-width :425px){
+    .version{
+        left: 90%;
+        bottom: -18%;
+    }
+}

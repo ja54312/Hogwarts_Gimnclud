@@ -29633,12 +29633,71 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"style.css":[function(require,module,exports) {
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/styles/home.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/React/Pegamino/Pergamino.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/assets/pergamino.png":[function(require,module,exports) {
+module.exports = "/pergamino.9554a3ef.png";
+},{}],"src/React/Pegamino/Pergamino.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Pergamino;
+
+var _react = _interopRequireDefault(require("react"));
+
+require("./Pergamino.css");
+
+var _pergamino = _interopRequireDefault(require("../../assets/pergamino.png"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Pergamino() {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-title-clases"
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "Tabla de Asignaturas")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-info-clases"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _pergamino.default,
+    className: "image-pergamino"
+  }), /*#__PURE__*/_react.default.createElement("table", {
+    className: "table-info-clases"
+  }, /*#__PURE__*/_react.default.createElement("td", null, /*#__PURE__*/_react.default.createElement("tr", null, /*#__PURE__*/_react.default.createElement("h3", null, "Profesores")), /*#__PURE__*/_react.default.createElement("tr", null, "L\xEDa Malfoy"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("tr", null, "Ximena Larsson"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("tr", null, "Jin Snape"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("tr", null, "4"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("tr", null, "5"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("tr", null, "5")), /*#__PURE__*/_react.default.createElement("td", null, /*#__PURE__*/_react.default.createElement("tr", null, /*#__PURE__*/_react.default.createElement("h3", null, "Asignatura")), /*#__PURE__*/_react.default.createElement("tr", null, "Herbologia"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("tr", null, "Defensa contra ", /*#__PURE__*/_react.default.createElement("br", null), "las artes oscuras"), /*#__PURE__*/_react.default.createElement("tr", null, "Pociones"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("tr", null, "o"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("tr", null, "u"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("tr", null, "b")))));
+}
+},{"react":"node_modules/react/index.js","./Pergamino.css":"src/React/Pegamino/Pergamino.css","../../assets/pergamino.png":"src/assets/pergamino.png"}],"src/React/Version/Version.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/React/Version/Version.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Version;
+
+var _react = _interopRequireDefault(require("react"));
+
+require("./Version.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Version() {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h5", {
+    className: "version"
+  }, "v0.0.1"));
+}
+},{"react":"node_modules/react/index.js","./Version.css":"src/React/Version/Version.css"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29650,18 +29709,26 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactDom = _interopRequireDefault(require("react-dom"));
 
-require("./style.css");
+require("./src/styles/home.css");
+
+var _Pergamino = _interopRequireDefault(require("./src/React/Pegamino/Pergamino"));
+
+var _Version = _interopRequireDefault(require("./src/React/Version/Version"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h1", null, "Hogwarts Gimnclud"));
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-titulo-principal"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "titulo-principal"
+  }, "Hogwarts Gimnclud")), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_Pergamino.default, null), /*#__PURE__*/_react.default.createElement(_Version.default, null));
 }
 
 var entryPointMalta = document.getElementById("root");
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(App, null), entryPointMalta);
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./style.css":"style.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./src/styles/home.css":"src/styles/home.css","./src/React/Pegamino/Pergamino":"src/React/Pegamino/Pergamino.js","./src/React/Version/Version":"src/React/Version/Version.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -29689,7 +29756,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33375" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35857" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,11 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import './style.css';
+import './src/styles/home.css';
+import Pergamino from "./src/React/Pegamino/Pergamino";
+import Version from "./src/React/Version/Version";
 
 export default function App(){
   return(
     <>
-      <h1>Hogwarts Gimnclud</h1>
+      <div className = "container-titulo-principal">
+      <h1 className="titulo-principal">Hogwarts Gimnclud</h1>
+      </div>
+      <hr/>
+      <Pergamino/>
+      <Version/>
     </>
   )
 }

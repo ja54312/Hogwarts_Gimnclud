@@ -1,12 +1,3 @@
-*{
-    background-color:#58595B;
-}
-.container-titulo-principal{
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-around;
-}
 .container-title-clases{
     display: flex;
     flex-wrap: nowrap;
@@ -27,15 +18,4 @@
     position: absolute;
     z-index:2;
     opacity: 20%;
-}.version{
-    color:black;
-    position: absolute;
-    left: 90%;
-    bottom: 0%;
-}
-@media screen and (max-width :425px){
-    .version{
-        left: 90%;
-        bottom: -18%;
-    }
 }
