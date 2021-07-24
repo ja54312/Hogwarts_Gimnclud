@@ -16,6 +16,6 @@
 }
 .image-pergamino{
     position: absolute;
+    opacity: 20% ;
     z-index:2;
-    opacity: 20%;
 }
