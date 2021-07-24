@@ -2,11 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import './style.css';
 
-class HelloMessage extends React.Component {
-  render() {
-    return <div>Holi {this.props.name}</div>;
-  }
+export default function App(){
+  return(
+    <>
+      <h1>Hogwarts Gimnclud</h1>
+    </>
+  )
 }
 
-var mountNode = document.getElementById("root");
-ReactDOM.render(mountNode);
+const entryPointMalta = document.getElementById("root");
+ReactDOM.render(<App/>, entryPointMalta);

@@ -2,10 +2,12 @@
   "name": "hogwarts-gimnclud",
   "version": "1.0.0",
   "description": "page colegio Hogwarts-Gimnclud",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel --no-source-maps --out-dir ./final index.html"
+    "start": "parcel --no-source-maps --out-dir ./final index.html",
+    "build": "npx parcel build --out-dir ./prod --public-url https://ja54312.github.io/Hogwarts_Gimnclud/ --no-source-maps  index.html",
+    "deploy": "gh-pages -d prod"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +19,7 @@
     "@babel/core": "^7.14.8",
     "@babel/preset-env": "^7.14.8",
     "@babel/preset-react": "^7.14.5",
+    "gh-pages": "^3.2.3",
     "parcel-bundler": "^1.12.5"
   }
 }
